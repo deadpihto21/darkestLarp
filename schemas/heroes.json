@@ -4,6 +4,9 @@
     "stress":0,
     "protection":0,
     "initiative":0,
+    "weapon":{
+      "main":"default_weapon"
+    },
     "resists":{
       "stun":0,
       "poison":0,
@@ -14,6 +17,35 @@
     }
   },
   "ManAtArms":{
-    "fucks":0
-  }
+    "hitPoints":1,
+    "protection":5,
+    "initiative":3,
+    "weapon":{
+      "main":"mace 1"
+    },    
+    "resists":{
+      "stun":40,
+      "poison":30,
+      "illness":30,
+      "deathblow":67,
+      "bleed":40,
+      "trap":10
+    }
+  },
+  "Monk":{
+    "hitPoints":1,
+    "protection":3,
+    "initiative":4,
+    "weapon":{
+      "main":"mace 1"
+    },    
+    "resists":{
+      "stun":30,
+      "poison":30,
+      "illness":30,
+      "deathblow":67,
+      "bleed":30,
+      "trap":10
+    }
+  },  
 }
