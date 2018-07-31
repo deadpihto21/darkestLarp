@@ -1,18 +1,21 @@
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+
+const htmlPlugin = new HtmlWebPackPlugin({
+  template: "./../src/index.html",
+  filename: "./index.html"
+});
+
 module.exports = {
-  entry: "./app/Main.js",
-  output: {
-    filename: "public/bundle.js"
-  },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015']
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
         }
       }
     ]
-  }
-}
+  },
+  plugins: [htmlPlugin]
+};
