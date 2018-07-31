@@ -1,0 +1,19 @@
+{
+  "default":{
+    "hitPoints":0,
+    "stress":0,
+    "protection":0,
+    "initiative":0,
+    "resists":{
+      "stun":0,
+      "poison":0,
+      "illness":0,
+      "deathblow":0,
+      "bleed":0,
+      "trap":0
+    }
+  },
+  "ManAtArms":{
+    "fucks":0
+  }
+}
