@@ -1,0 +1,63 @@
+{
+  "default":{
+    "name":"default_name",
+    "description":"default_description",
+    "damage":0,
+    "healing":0,
+    "stunning":0,
+    "defense":0,
+    "stress":0,
+    "times":0,
+    "range":"none",
+    "target":"none",
+    "opportunity":"none",
+    "aggro":"none",
+    "monster_increased":0,
+    "health_increased":0,
+    "defence_increased":0,
+    "removal_of_effect"
+    "duration":0,
+    "use":{
+
+    }
+  },
+  "crush": {
+    "name":"Раздробить",
+    "description":"Запуск булавы и щита в бой.",
+    "opportunity":"before",
+    "target":"self",
+    "duration":1
+  },
+  "bastion": {
+    "name":"Бастион",
+    "description":"Удар щитом в плечо монстра и объявление атаки «Бастион» оглушает монстра на 3 секунды. Один раз в бою.",
+    "opportunity":"battle",
+    "target":"enemy",
+    "stunning":3,
+    "times":1
+  },
+  "roaring": {
+    "name":"Рёв",
+    "description":"устрашающий крик Ветерана направленный на всех врагов. Снижает характеристики последних -1 хит всем монстрам.",
+    "opportunity":"before",
+    "target":"enemies",
+    "stunning":3,
+    "damage":1
+  },
+  "defender": {
+    "name":"Защитник",
+    "description":"Ветеран встает на защиту одного из своих товарищей, тем самым забирая его урон на себя. Паралельно герой увеличивает свою защиту. Ветеран получает бонус к защите в +3хита . Прикрывает собой союзника. Монстр который должен был напасть на цель защиты дружинника нападает на героя. Число нападающих становиться 2.",
+    "opportunity":"before",
+    "aggro":"self",
+    "target":"ally",
+    "defence_increased":3,
+    "monster_increased":1,
+  },
+  "care_of_uniforms": {
+    "name":"Уход за обмундированием ",
+    "description":"применяется лишь на самого себя. +1х до конца рейда.",
+    "opportunity":"camp",
+    "target":"self",
+    "health_increased":1,
+  }          
+}
