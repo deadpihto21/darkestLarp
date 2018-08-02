@@ -15,7 +15,7 @@
     "monster_increased":0,
     "health_increased":0,
     "defence_increased":0,
-    "removal_of_effect"
+    "removal_of_effect":"",
     "duration":0,
     "use":{
 
@@ -51,13 +51,13 @@
     "aggro":"self",
     "target":"ally",
     "defence_increased":3,
-    "monster_increased":1,
+    "monster_increased":1
   },
   "care_of_uniforms": {
     "name":"Уход за обмундированием ",
     "description":"применяется лишь на самого себя. +1х до конца рейда.",
     "opportunity":"camp",
     "target":"self",
-    "health_increased":1,
+    "health_increased":1
   }          
 }
